@@ -11,7 +11,9 @@ AUTHOR(S):
             Vishal Kamat
             Northwestern University
 
-SUPPORT:    <iacanay@northwestern.edu, v.kamat@u.northwestern.edu>
+## SUPPORT:    
+
+<iacanay@northwestern.edu, v.kamat@u.northwestern.edu>
 
 ## NOTES:      
             Download files in working directory. The file rdperm_example
