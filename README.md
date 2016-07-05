@@ -1,9 +1,7 @@
 This is a README file for `rdperm'.
 ------------------------------------------------------------------------------
 
-SUBJECT:    rdperm
-
-AUTHOR(S):  
+### AUTHOR(S):  
 
             Ivan A. Canay
             Northwestern University
