@@ -19,7 +19,7 @@ This is a README file for `rdperm'.
             (2015) on the dataset from Lee (2008). The dataset is contained in
             table_two_final.dta. For further help type: . help rdperm
 
-FILES:
+## FILES:
 
 rdperm.ado
 rdperm.hlp
