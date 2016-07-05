@@ -14,10 +14,10 @@ AUTHOR(S):
 SUPPORT:    <iacanay@northwestern.edu, v.kamat@u.northwestern.edu>
 
 NOTES:      
-            Download files in working directory. The file `rdperm_example'
+            Download files in working directory. The file rdperm_example
             illustrates the implementation for the results in Canay and Kamat 
             (2015) on the dataset from Lee (2008). The dataset is contained in
-            `table_two_final.dta'. For further help type:
+            table_two_final.dta. For further help type:
 
             . help rdperm
 
