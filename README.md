@@ -1,6 +1,6 @@
 # README #
 
-[**DOWNLOAD LATEST COMMIT**](https://bitbucket.org/iacanay/crs-Stata/get/HEAD.zip)
+[**DOWNLOAD LATEST COMMIT**](https://bitbucket.org/iacanay/rdperm-stata/get/HEAD.zip)
 
 ### What is this repository for? ###
 
