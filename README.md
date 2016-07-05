@@ -17,9 +17,7 @@ NOTES:
             Download files in working directory. The file rdperm_example
             illustrates the implementation for the results in Canay and Kamat 
             (2015) on the dataset from Lee (2008). The dataset is contained in
-            table_two_final.dta. For further help type:
-
-            . help rdperm
+            table_two_final.dta. For further help type: . help rdperm
 
 FILES:
 
