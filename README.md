@@ -13,7 +13,7 @@ AUTHOR(S):
 
 SUPPORT:    <iacanay@northwestern.edu, v.kamat@u.northwestern.edu>
 
-NOTES:      
+## NOTES:      
             Download files in working directory. The file rdperm_example
             illustrates the implementation for the results in Canay and Kamat 
             (2015) on the dataset from Lee (2008). The dataset is contained in
