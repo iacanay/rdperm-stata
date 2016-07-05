@@ -1,27 +1,35 @@
-This is a README file for `rdperm'.
-------------------------------------------------------------------------------
+# README #
 
-### AUTHOR(S):  
+### What is this repository for? ###
 
-            Ivan A. Canay
-            Northwestern University
+* Stata package Rdperm
+* Implements the permutation test for continuity of covariates in the RD design
+* Canay and Kamat (2016): Approximate Permutation Tests and Induced Order Statistics in the Regression Discontinuity Design
 
-            Vishal Kamat
-            Northwestern University
+### Authors of the paper ###
+* Ivan A. Canay, Northwestern University
+* Vishal Kamat, Northwestern University 
 
-## SUPPORT:    
+### Contributors of the package ###
+* Ivan A. Canay, Northwestern University
+* Vishal Kamat, Northwestern University 
 
-<iacanay@northwestern.edu, v.kamat@u.northwestern.edu>
+### How do I get set up? ###
 
-## NOTES:      
-            Download files in working directory. The file rdperm_example
-            illustrates the implementation for the results in Canay and Kamat 
-            (2015) on the dataset from Lee (2008). The dataset is contained in
-            table_two_final.dta. For further help type: . help rdperm
+ 	Download files in working directory. The file rdperm_example illustrates the implementation for the results in Canay and Kamat (2016) on the dataset from Lee (2008). The dataset is contained in table_two_final.dta. For further help type: 
 
-## FILES:
+ 	. help rdperm
+
+ 
+### Who do I talk to? ###
+
+* Repository owner: <iacanay@northwestern.edu>
+* Repository admin: <v.kamat@u.northwestern.edu>
+
+### Files ###
 
 rdperm.ado
 rdperm.hlp
 rdperm_example.do
 table_two_final.dta
+
