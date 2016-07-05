@@ -1,5 +1,7 @@
 # README #
 
+[**DOWNLOAD LATEST COMMIT**](https://bitbucket.org/iacanay/crs-Stata/get/HEAD.zip)
+
 ### What is this repository for? ###
 
 * Stata package Rdperm
