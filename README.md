@@ -36,3 +36,11 @@ rdperm.ado
 rdperm.hlp
 rdperm_example.do
 table_two_final.dta
+
+### LICENSE
+
+CRS-STATA is released under the [MIT LICENSE](https://bitbucket.org/iacanay/rdperm-stata/raw/master/LICENSE)
+
+### Changelog 
+
+A complete version history is here: [CHANGELOG](https://bitbucket.org/iacanay/rdperm-stata/wiki/Home) 
