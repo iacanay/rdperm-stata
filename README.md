@@ -1,6 +1,6 @@
 # README #
 
-[**DOWNLOAD LATEST COMMIT**](https://bitbucket.org/iacanay/rdperm-stata/get/HEAD.zip)
+[**DOWNLOAD Rdperm PACKAGE**](https://bitbucket.org/iacanay/rdperm-stata/get/HEAD.zip)
 
 ### What is this repository for? ###
 
@@ -43,4 +43,4 @@ CRS-STATA is released under the [MIT LICENSE](https://bitbucket.org/iacanay/rdpe
 
 ### Changelog 
 
-A complete version history is here: [CHANGELOG](https://bitbucket.org/iacanay/rdperm-stata/wiki/Home) 
+A complete version history is here: [CHANGELOG](https://bitbucket.org/iacanay/rdperm-stata/wiki/Home)
