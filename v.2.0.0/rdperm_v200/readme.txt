@@ -18,10 +18,15 @@ AUTHOR(S):  Ivan A. Canay\
 \
 SUPPORT:    <iacanay@northwestern.edu, v.kamat@u.northwestern.edu>\
 \
-NOTES:      Download files in working directory. The file `rdperm_example'\
-            illustrates the implementation for the results in Canay and Kamat \
-            (2015) on the dataset from Lee (2008). The dataset is contained in\
-            `table_two_final.dta'. For further help type:\
+NOTES:      Download files in working directory, and run the following command    \
+            before implementing:\
+ \
+            . capture program drop rdperm\
+\
+            The file `rdperm_example' illustrates the implementation for the \
+            results in Canay and Kamat (2016) on the dataset from Lee (2008). \
+            The dataset is contained in `table_two_final.dta'. For further help \
+            type:\
 \
             . help rdperm\
 \
