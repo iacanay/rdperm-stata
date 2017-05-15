@@ -1,11 +1,11 @@
 clear
 set more off
 capture log close
-cd "..."                                     //Change to working directory
+//cd "..."                                     //Change to working directory
 log using "rdperm_example.smcl", replace 
 
 ********************************************************************************
-//Canay & Kamat(2016) RDD Distribution Test using permutations on Lee(2008)
+//Canay & Kamat(2017) RDD Distribution Test using permutations on Lee(2008)
 ********************************************************************************
 
 use table_two_final.dta, clear    //Loading data

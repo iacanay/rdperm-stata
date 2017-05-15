@@ -1,11 +1,11 @@
 {smcl}
 {* 24aug2016}{...}
-{cmd:help rdperm}{right:version:  2.0.0}
+{cmd:help rdperm}{right:version:  3.0.0}
 {hline}
 
 {title:Title}
 
-{p 4 8}{cmd:rdperm}  -  Canay and Kamat (2016) procedure{p_end}
+{p 4 8}{cmd:rdperm}  -  Canay and Kamat (2017) procedure{p_end}
 
 
 {title:Syntax}
@@ -27,7 +27,7 @@
 
 {p 4 4 2}
 {opt rdperm} provides a procedure for testing the null hypothesis of continuity of the distribution of baseline covariates at the cutoff in 
-the regression discontinuity design (RDD). It implements the permutation test procedure outlined in Canay and Kamat (2016).{p_end}
+the regression discontinuity design (RDD). It implements the permutation test procedure outlined in Canay and Kamat (2017).{p_end}
 
 
 {title:Options}
@@ -42,7 +42,7 @@ the regression discontinuity design (RDD). It implements the permutation test pr
 {opt p:ermutations(#)} specifies the number of random permutations performed to obtain the critical value. This must take a positive integer value. The default is p(999).
 
 {phang}
-{opt cvm} specifies whether the cvm test statistic is used in the joint test with multiple covariates. If this option is omitted then the max test statistic, as described in Canay and Kamat (2016), is used by default. Note that with a single 
+{opt cvm} specifies whether the cvm test statistic is used in the joint test with multiple covariates. If this option is omitted then the max test statistic, as described in Canay and Kamat (2017), is used by default. Note that with a single 
 covariate these two test statistics are identical.
 
 
@@ -85,7 +85,7 @@ covariate these two test statistics are identical.
 {title:References}
 
 {p 4 6 2}
- - Canay, I.A. and Kamat, V. (2016). Approximate Permutation Tests and Induced Order Statistics in the Regression Discontinuity Design. CeMMAP working paper CWP33/16.{p_end}
+ - Canay, I.A. and Kamat, V. (2017). Approximate Permutation Tests and Induced Order Statistics in the Regression Discontinuity Design. CeMMAP working paper CWP33/16.{p_end}
 
 {p 4 6 2}
  - Lee, D. S. (2008). Randomized experiments from non-random selection in U.S. House elections. Journal of Econometrics, 142 675-697.{p_end}

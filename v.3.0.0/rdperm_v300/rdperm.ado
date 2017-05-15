@@ -1,4 +1,4 @@
-*! version 2.0.0 24August2016
+*! version 3.0.0 10May2017
 program define rdperm, rclass
 version 13
 
@@ -95,22 +95,16 @@ void rdperm_work(string scalar covariates_s, string scalar running_s,           
 
    if (q == 0) {
      sz              = sqrt(variance(z))                                        //
+	 mz              = mean(z)                                                  //
 	 h               = 1.84*sz*(N^(-1/5))                                       //
-	 I               = J(N,1,1) :- (z[.,1] :< -h) :- (z[.,1] :> h)              //
 	 f               = sum((abs(z :/ h) :<= 1) :* (1 :- abs(z :/ h)))/(N*h)     //
 	 q               = J(K,1,1)                                                 //
 	 for (k=1; k <= K; k++) {
-	   w_temp        = w[.,k]                                                   //
-	   w_I           = select(w_temp, I)                                        //    
-	   z_I           = select(z, I)                                             //    
-	   N_I           = rows(z_I)                                                //
-	   vw            = variance(w_I)                                            //
-	   sw_I          = sqrt(vw)                                                 //
-	   sz_I          = sqrt(variance(z_I))                                      //
-	   mz_I          = mean(z_I)                                                //
-	   mw_I          = mean(w_I)                                                //
-	   p             = sum((z_I :- mz_I) :* (w_I :- mw_I))/(N_I*sw_I*sz_I)      //
-	   q[k,.]        = 5*sqrt(f*(1-p^2)*vw)*(N^(3/4)/log(N))                    //
+	   w_temp        = w[.,k]                                                   //    
+	   sw            = sqrt(variance(w_temp))                                   //
+	   mw            = mean(w_temp)                                             //
+	   p             = sum((z :- mz) :* (w_temp :- mw))/(N*sw*sz)               //
+	   q[k,.]        = sqrt((1-p^2))*f*sz*(N^(0.9)/log(N))                    //
 	 }
 	 q               = ceil(colmin(q))                                          //
 	 if (q < 10) {
