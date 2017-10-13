@@ -1,6 +1,6 @@
 {smcl}
 {* 24aug2016}{...}
-{cmd:help rdperm}{right:version:  3.0.0}
+{cmd:help rdperm}{right:version:  4.0.0}
 {hline}
 
 {title:Title}
@@ -36,7 +36,7 @@ the regression discontinuity design (RDD). It implements the permutation test pr
 {opt c:utoff(#)} specifies the cutoff or threshold value in the RDD treatment rule. The default is c(0).
 
 {phang}
-{opt q:observations(#)} specifies the number of effective observations used from either side of the cutoff, which are those with running variable values closest to the cutoff. The rule of thumb option is set by q(0). The default is q(0).
+{opt q:observations(#)} specifies the number of effective observations used from either side of the cutoff, which are those with running variable values closest to the cutoff. The rule of thumb option is set by q(0), referring to footnote 4 in           Canay and Kamat (2017), or by q(-1), referring to equation 15 in Canay and Kamat (2017). The default is q(0).
 
 {phang}
 {opt p:ermutations(#)} specifies the number of random permutations performed to obtain the critical value. This must take a positive integer value. The default is p(999).

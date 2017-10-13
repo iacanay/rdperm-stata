@@ -1,4 +1,4 @@
-*! version 3.0.0 10May2017
+*! version 4.0.0 13Oct2017
 program define rdperm, rclass
 version 13
 
@@ -93,7 +93,7 @@ void rdperm_work(string scalar covariates_s, string scalar running_s,           
    //----Computing rule of thumb q value when specified-------------------------
    //---------------------------------------------------------------------------
 
-   if (q == 0) {
+   if (q == -1) {
      sz              = sqrt(variance(z))                                        //
 	 mz              = mean(z)                                                  //
 	 h               = 1.84*sz*(N^(-1/5))                                       //
@@ -105,6 +105,30 @@ void rdperm_work(string scalar covariates_s, string scalar running_s,           
 	   mw            = mean(w_temp)                                             //
 	   p             = sum((z :- mz) :* (w_temp :- mw))/(N*sw*sz)               //
 	   q[k,.]        = sqrt((1-p^2))*f*sz*(N^(0.9)/log(N))                    //
+	 }
+	 q               = ceil(colmin(q))                                          //
+	 if (q < 10) {
+       q             = 10                                                       //
+	 }
+	 else if (q > N^(0.9)/log(N)) {
+	   q             = ceil(N^(0.9)/log(N))                                     //
+     }
+	 else {
+	   q             = q                                                        //
+	 }
+   }
+   if (q == 0) {
+     sz              = sqrt(variance(z))                                        //
+	 mz              = mean(z)                                                  //
+	 h               = 1.84*sz*(N^(-1/5))                                       //
+	 f               = sum((abs(z :/ h) :<= 1) :* (1 :- abs(z :/ h)))/(N*h)     //
+	 q               = J(K,1,1)                                                 //
+	 for (k=1; k <= K; k++) {
+	   w_temp        = w[.,k]                                                   //    
+	   sw            = sqrt(variance(w_temp))                                   //
+	   mw            = mean(w_temp)                                             //
+	   p             = sum((z :- mz) :* (w_temp :- mw))/(N*sw*sz)               //
+	   q[k,.]        = sqrt(10*(1-p^2))*f*sz*(N^(0.75)/log(N))                    //
 	 }
 	 q               = ceil(colmin(q))                                          //
 	 if (q < 10) {
