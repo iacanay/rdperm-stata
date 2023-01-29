@@ -1,7 +1,5 @@
 # README #
 
-[**DOWNLOAD Rdperm PACKAGE**](https://bitbucket.org/iacanay/rdperm-stata/get/HEAD.zip)
-
 ### What is this repository for? ###
 
 * Stata package Rdperm
@@ -39,8 +37,4 @@ table_two_final.dta
 
 ### LICENSE
 
-CRS-STATA is released under the [MIT LICENSE](https://bitbucket.org/iacanay/rdperm-stata/raw/master/LICENSE)
-
-### Changelog 
-
-A complete version history is here: [CHANGELOG](https://bitbucket.org/iacanay/rdperm-stata/wiki/Home)
+CRS-STATA is released under the [MIT LICENSE](https://github.com/iacanay/rdperm-stata/blob/master/LICENSE)
